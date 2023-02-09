@@ -30,8 +30,11 @@
 .al_cent{
     align-items: center;
 }
+.just_cent{
+    justify-content: center;
+}
 .dsh_3{
-    border: dashed 3px rgb(221, 65, 115);
+    border: dashed 1px rgb(221, 65, 115);
 }
 .icon{
     padding: 0.25rem;
@@ -40,6 +43,10 @@
 /* #endregion*/
 
 /* #region------MAIN */
+#app_main{
+    background-color: black;
+    height: 92vh;
+}
 /* #endregion*/
 
 /* #region------HEADER */
@@ -47,24 +54,55 @@
 
 /* #region------FOOTER */
 #app_footer{
-    height: 4rem;
+    height: 8vh;
     width: 100%;
     background-color:var(--cl-grey);
     position: absolute;
     bottom: 0;
 }
-.audiovideo, .end{
+.audiovideo {
     width: 20%;
     height: 100%;
 }
 .tools{
-    flex-grow: 1;
+    width: 40%;
+    margin-left: -10rem;
+    justify-self: center;
 }
-#app_footer>div{
-    background-color: aqua;
+.end{
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    background-color: var(--cl-greylight);
+}
+.end>p{
+    color: var(--cl-red);
 }
 
+#entire_icon{
+    background-color: ;
+    padding: 0 .75rem;
+}
+.icon{
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon>i{
+    font-size: 1.5rem;
+}
+.icon>.icon_txt{
+    font-size: .6rem;
+}
+.icon>i, .icon>span{
+    padding: .2rem;
+}
 
+.icon_arrow{
+    font-size: .6rem;
+    font-weight: bold;
+    padding-left: .5rem;
+}
 /* #endregion*/
 
 /* #region------commons */
